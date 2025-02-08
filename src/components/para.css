@@ -1,0 +1,522 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container1 {
+  height: 3800px;
+  position: relative;
+  width: 1700px;
+  left:0px;
+  gap:2px;
+  bottom: 700px;
+  
+}
+
+
+.container1 .overlap-group {
+  height: 8339px;
+  left: 0;
+  position: absolute;
+  top: -8px;
+  width: 708px;
+}
+
+.container1 .png {
+  background-image: url("../assets/website.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+border-color:10px black solid;
+  border-radius: 8px;
+
+  height: 833px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 344px;
+}
+
+.container1 .mockup-png {
+  background-image: url("../assets/website2.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+
+  height: 833px;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 344px;
+}
+
+.container1 .sm-png {
+  background-image: url("../assets/swebsite1.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 40px ;
+
+  border-radius: 8px;
+
+  height: 833px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 344px;
+  
+}
+
+.container1 .sm-mockup-png {
+  background-image: url("../assets/swebsite2.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+
+}
+
+.container1 .overlap {
+  height: 874px;
+  left: 728px;
+  position: absolute;
+  top: -93px;
+  width: 712px;
+}
+
+.container1 .div {
+  background-image: url("../assets/wesbite3.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+
+  border-radius: 8px;
+
+  height: 950px;
+  right: -40px;
+  position: absolute;
+  top: 0;
+  width: 420px;
+}
+
+.container1 .png-2 {
+  background-image: url("../assets/website4.png");
+
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+
+  border-radius: 8px;
+
+  height: 833px;
+  left: -60px;
+  position: absolute;
+  top: 0;
+  width: 420px;
+}
+
+.container1 .sm-png-2 {
+  background-image: url("../assets/swebsite3.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+
+  height: 373px;
+  left: 12px;
+  position: absolute;
+  top: 444px;
+  width: 590px;
+}
+
+.container1 .png-3 {
+}
+
+.container1 .png-4 {
+  background-image: url("../assets/website6.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px;
+ 
+  height: 850px;
+  left: 0;
+  position: absolute;
+  top: 1580px;
+  width: 344px;
+}
+
+.container1 .overlap-2 {
+  height: 992px;
+  left: 364px;
+  position: absolute;
+  top: 979px;
+  width: 1072px;
+}
+
+.container1 .png-5 {
+  background-image: url("../assets/website7.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+
+  height: 656px;
+  left: -35px;
+  position: absolute;
+  top: 0;
+  width: 344px;
+}
+
+.container1 .png-6 {
+  background-image: url("../assets/website8.png");
+
+  background-position: 100% 100%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+  
+  height: 690px;
+  left: 740px;
+  position: absolute;
+  top: 288px;
+  width: 344px;
+}
+
+.container1 .png-7 {
+  background-image: url("../assets/website10.png");
+  background-position: center;
+  background-size: contain; /* Ensures the whole image is visible */
+  background-repeat: no-repeat; /* Prevents tiling */
+  
+  border-radius: 8px;
+
+  height: 700px;
+  width: 400px;
+
+  position: absolute;
+  top: 108px;
+  left: 324px;
+}
+
+
+.container1 .sm-png-3 {
+  background-image: url("../assets/swebsite4.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+
+  height: 310px;
+  left: 176px;
+  position: absolute;
+  top: 325px;
+  width: 400px;
+}
+
+.container1 .sm-png-4 {
+  background-image: url("../assets/swebsite5.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px ;
+  border-radius: 8px;
+
+  height: 400px;
+  left: 586px;
+  position: absolute;
+  top: 200px;
+  width: 400px;
+}
+
+.container1 .png-8 {
+  background-image: url("../assets/website10.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 4px;
+
+  height: 953px;
+  left: 1456px;
+  position: absolute;
+  top: 989px;
+  width: 344px;
+}
+.container1 {
+  min-height: 1968px;
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Large images - vertical movement only */
+.large-image {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  z-index: -1;
+}
+
+/* Small images - crossing movement with higher z-index */
+.small-image {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  z-index: 1;
+  position: relative;
+}
+
+/* Hover effects */
+.large-image:hover {
+  transform: translateY(-10px) !important;
+}
+
+.small-image:hover {
+  transform: scale(1.05) !important;
+  z-index: 3;
+}
+
+/* Base styles for images */
+[class^="png"],
+[class^="sm-png"] {
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  transition: all 0.9s ease-out;
+}
+
+/* Keep your existing positioning classes but update with new z-index handling */
+.container1 .overlap-group {
+  height: 833px;
+  left: 0;
+  position: absolute;
+  top: -8px;
+  width: 708px;
+  z-index: 1;
+}
+
+.container1 .png {
+  height: 833px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 344px;
+  top:140px;
+}
+
+.container1 .mockup-png {
+  height: 794px;
+  position: absolute;
+  top: 24px;
+  width: 344px;
+  left: 330px;
+}
+
+.container1 .sm-png {
+  height: 276px;
+  left: 200px;
+  position: absolute;
+  top: 158px;
+  width: 400px;
+}
+
+.container1 .sm-mockup-png {
+  height: 237px;
+  left: 105px;
+  position: absolute;
+  top: 584px;
+  width: 400px;
+}
+
+/* Add perspective for 3D effect */
+.overlap-group,
+.overlap,
+.overlap-2 {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Responsive design */
+@media (max-width: 1700px) {
+  .container1 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    height: auto;
+  }
+
+  .large-image,
+  .small-image {
+    width: 100%;
+    max-width: 344px;
+    position: relative;
+    left: 0;
+    margin: 1rem auto;
+  }
+}
+
+/* Keep all your existing CSS classes but ensure proper z-indexing */
+.container1 .overlap {
+  z-index: 1;
+}
+
+.container1 .overlap-2 {
+  z-index: 1;
+}
+
+/* Animation keyframes for small images */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Apply floating animation to small images */
+.small-image {
+  animation: float 1s ease-in-out infinite;
+}
+
+/* Stagger the animation for each small image */
+.sm-png {
+  animation-delay: 0s;
+}
+.sm-mockup-png {
+  animation-delay: 1s;
+}
+.sm-png-2 {
+  animation-delay: 2s;
+}
+.sm-png-3 {
+  animation-delay: 1.5s;
+}
+.sm-png-4 {
+  animation-delay: .1s;
+}
+
+/* Keep the rest of your existing CSS classes */
+
+.large-image {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  z-index: 1;
+  position: relative;
+}
+
+/* Small images float above large images */
+.small-image {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  z-index: 2; /* Ensures they stay above */
+  position: absolute;
+}
+
+/* Large images move up/down on scroll */
+.large-image.animate {
+  transform: translateY(-20px);
+}
+
+/* Small images remain above and float */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.small-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .container1 {
+    height: auto;
+  }
+  .large-image,
+  .small-image {
+    width: 100%;
+    max-width: 344px;
+    position: relative;
+    left: 0;
+    margin: 1rem auto;
+  }
+}
+
+
+
+
+
+
+
+/* Keep your existing positioning styles for each element */
+/* ... */
+
+@media (max-width: 768px) {
+  .container1 {
+    height: auto;
+  }
+
+  .parallax-element {
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 344px;
+    margin: 1rem auto;
+    transform: none !important;
+  }
+}
+
+
+
+
+.parallax-element {
+  position: absolute;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+.large-image {
+  z-index: 1;
+}
+
+.small-image {
+  z-index: 2;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.small-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container1 {
+    height: auto;
+  }
+
+  .parallax-element {
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 344px;
+    margin: 1rem auto;
+    transform: none !important;
+  }
+}
+
+

@@ -1,0 +1,10 @@
+@keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .marquee {
+    animation: marquee var(--duration, 30s) linear infinite;
+  }
+  

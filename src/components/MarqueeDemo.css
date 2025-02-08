@@ -1,0 +1,119 @@
+.marquee-demo {
+    position: relative;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+bottom:800px;
+    background-color: #fff;
+  }
+  
+  .marquee-row {
+    margin: 1rem 0;
+  }
+  
+  .review-card {
+    position: relative;
+    width: 16rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.01);
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    margin: 0 1rem;
+  }
+  
+  .review-card:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .review-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .review-avatar {
+    border-radius: 50%;
+  }
+  
+  .review-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .review-username {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .review-body {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .gradient-overlay {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 33.333%;
+  }
+  
+  .gradient-overlay.left {
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+  }
+  
+  .gradient-overlay.right {
+    right: 0;
+    background: linear-gradient(to left, #fff, transparent);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .marquee-demo {
+      background-color: #000;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .review-card {
+      border-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .review-card:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  
+    .review-name,
+    .review-body {
+      color: #fff;
+    }
+  
+    .review-username {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  
+    .gradient-overlay.left {
+      background: linear-gradient(to right, #000, transparent);
+    }
+  
+    .gradient-overlay.right {
+      background: linear-gradient(to left, #000, transparent);
+    }
+  }
+  
+  

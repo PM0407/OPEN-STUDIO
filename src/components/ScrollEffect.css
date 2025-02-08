@@ -1,0 +1,42 @@
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    bottom: 900px;
+  }
+  
+  .scroll-content {
+    display: flex;
+    gap: 40px;
+    animation: scrollAnimation 15s linear infinite;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .scroll-content.duplicate {
+    left: 123%;  /* Fixes misalignment */
+  }
+  
+  .scroll-content span {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  @keyframes scrollAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

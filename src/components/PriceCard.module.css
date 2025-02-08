@@ -1,0 +1,139 @@
+.pricingContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: -700px auto 0 auto; /* Moves it up */
+  
+  background-color: #0a0a0a;
+}
+
+  .pricingCard {
+    background-color: #141414;
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .pricingCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardHeader {
+    margin-bottom: 24px;
+  }
+  
+  .icon {
+    font-size: 2px;
+    margin-bottom: 16px;
+    
+  }
+  .icon img {
+    width: 50px;  /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    size: 10px;
+
+  }
+  .cardHeader h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .subtitle {
+    color: #888888;
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .price {
+    margin: 16px 0;
+  }
+  
+  .amount {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .dot {
+    color: #ff0000;
+    margin-left: 8px;
+  }
+  
+  .description {
+    color: #888888;
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  .ctaButton,
+  .bookCallButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover,
+  .bookCallButton:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .featuresList li {
+    color: #888888;
+    font-size: 14px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .featuresList li::before {
+    content: "•";
+    margin-right: 8px;
+    color: #888888;
+  }
+  
+  .contactSection {
+    margin-top: 24px;
+    text-align: center;
+  }
+  
+  .calendarIcon {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .contactSection h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .contactSection p {
+    color: #888888;
+    font-size: 14px;
+    margin: 8px 0 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .pricingContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

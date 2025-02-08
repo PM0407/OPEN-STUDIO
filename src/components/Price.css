@@ -1,0 +1,51 @@
+:root {
+    --background: rgba(163, 163, 163, 1);
+    --fade: rgba(255, 255, 255, 1);
+  }
+.heading {
+    height: 134px;
+    position: relative;
+    width: 741px;
+  }
+  
+  .heading .overlap-group {
+    height: 135px;
+    left: 20px;
+    position: relative;
+    bottom: 800px;
+    width: 712px;
+    left:450px;
+  }
+  
+  .heading .text-wrapper {
+    color: var(--fade);
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 56px;
+    font-weight: 600;
+    height: 68px;
+
+    letter-spacing: -2.80px;
+    line-height: 190px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 712px;
+  }
+  
+  .heading .div {
+    color: var(--background);
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 56px;
+    font-weight: 600;
+    height: 68px;
+    left: 65px;
+    letter-spacing: -2.80px;
+    line-height: 67.2px;
+    position: absolute;
+    text-align: center;
+    top: 67px;
+    white-space: nowrap;
+    width: 577px;
+  }
+  

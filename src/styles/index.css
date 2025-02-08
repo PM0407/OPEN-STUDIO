@@ -1,0 +1,1014 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:10;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  align-items: center;
+  width: 80%;
+  left:160px;
+}
+
+.header nav {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 9px;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between; /* Spread out the elements */
+  align-items: center;
+  width: 70%;
+}
+
+/* Left section for 'Get in Touch' button */
+.header-left {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.get-in-touch-btn {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: center; /* Centers items horizontally */
+  background-color: white;
+  color: black;
+  gap: 1px; /* Space between text and arrow */
+  padding: 0.4rem 0.6rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: -0.67px;
+}
+
+.arrow-icon {
+  transition: transform 0.2s ease-in-out;
+  font-size: 4px; /* Decrease size of the icon */
+}
+
+.get-in-touch-btn:hover .arrow-icon {
+  transform: translate(3px, -3px); /* Adds slight movement effect on hover */
+}
+
+.get-in-touch-btn:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Middle nav items */
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav ul li {
+  margin: 0 1rem;
+}
+
+.header nav ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;
+  font-weight: 500;
+}
+
+.header nav ul li a:hover {
+  color: white;
+}
+
+.header nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8b5cf6;
+  transition: width 0.3s;
+}
+
+.header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Right section for logo */
+.header-right {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  height: 20px; /* Adjust logo size */
+  width: auto;
+}
+
+
+
+
+
+
+
+
+/* Hero Styles */
+.hero .squares-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.hero .subtitle {
+  color: #a78bfa;
+  font-weight: 600;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1rem; /* Reduced padding */
+  max-height: 60vh; /* Restrict height to 60% of the viewport height */
+  overflow: hidden;
+}
+
+.hero .subtitle {
+  color: #060606;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 4.735rem;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  height:-60vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Outfit', sans-serif; /* Changed font to Outfit */
+  font-weight: 600; /* Semi Bold */
+  text-align: center; /* Centers text inside the h1 */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  width: 100%; /* Ensures it takes full width of its parent */
+margin-top: 130px;
+}
+
+
+
+.hero .description {
+  color: #a3a3a3;
+
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 40;
+  letter-spacing: -0.24px;
+ margin-top:-18px;
+ white-space: nowrap;
+ 
+
+  
+}
+
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #faf8ff;
+  color: white;
+  border: none;
+  padding: 16px 10px;
+  border-radius: 12px;
+  position: relative;  /* Keeps the arrow inside the button */
+  top: 30px; /* Moves the button down */
+  display: inline-flex;  /* Aligns button and icon horizontally */
+  align-items: center; /* Centers content vertically */
+  font-family: 'Inter Tight';
+  font-size: 18px;
+}
+
+.arrow-icon1 {
+  position: absolute;  /* Positions the icon inside the button */
+  right: 10px;  /* Adjust the distance from the right edge */
+  top: 50%;  /* Vertically centers the icon */
+  transform: translateY(-50%);  /* Centers the icon exactly */
+  font-size: 18px;  /* Adjust icon size if needed */
+  color: black;  /* Sets the arrow color to black */
+}
+
+.btn-primary:hover {
+  background-color: #faf8ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  cursor: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #4b5563;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(75, 85, 99, 0.2);
+  transform: scale(1.05);
+}
+
+
+
+/* Features Styles */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.feature-card {
+  background-color: rgba(31, 41, 55, 0.5);
+  border: 1px solid #4b5563;
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #ccc;
+}
+
+/* Client Logos Styles */
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem 0;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.logo-container:hover {
+  opacity: 1;
+}
+
+.client-logo {
+  height: 2rem;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.logo-container:hover .client-logo {
+  filter: grayscale(0%);
+}
+
+/* Framer Badge Styles */
+.framer-badge {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.framer-badge button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.framer-badge button:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.05);
+}
+
+/* Background Effects */
+.background-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-effect {
+  position: absolute;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .client-logos {
+    gap: 2rem;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* Why Me Section Styles */
+.why-me {
+  padding: 6rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-tag {
+  color: #8b5cf6;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.why-me h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.section-description {
+  color: #9ca3af;
+  font-size: 1.125rem;
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature-box {
+  background: rgba(17, 24, 39, 0.4);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(75, 85, 99, 0.4);
+}
+
+.feature-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feature-box p {
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.feature-visual {
+  position: relative;
+  min-height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+/* Conversion Visual */
+.conversion-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatars {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #1f2937;
+  margin-left: -0.75rem;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.btn-touch {
+  background: #8b5cf6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.badge {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  background: #8b5cf6;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Devices Visual */
+.devices-visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.device-type {
+  text-align: center;
+}
+
+.check {
+  color: #8b5cf6;
+  margin-right: 0.5rem;
+}
+
+.device-mock {
+  margin-top: 1rem;
+  background: #1f2937;
+  border-radius: 0.5rem;
+}
+
+.device-mock.large {
+  width: 120px;
+  height: 80px;
+}
+
+.device-mock.medium {
+  width: 90px;
+  height: 60px;
+}
+
+.device-mock.small {
+  width: 60px;
+  height: 100px;
+}
+
+/* Bottom Features */
+.bottom-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.bottom-feature {
+  background: rgba(17, 24, 39, 0.4);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(75, 85, 99, 0.4);
+}
+
+.bottom-feature h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bottom-feature p {
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+/* Visual Elements */
+.completion-visual {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.graph-visual {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.bar {
+  width: 60px;
+  background: #374151;
+  border-radius: 0.25rem 0.25rem 0 0;
+  position: relative;
+  text-align: center;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.bar.quality {
+  height: 120px;
+  background: #8b5cf6;
+}
+
+.bar.price {
+  height: 60px;
+}
+
+.progress-visual {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.progress-bar {
+  background: #1f2937;
+  height: 4px;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.progress-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #8b5cf6;
+}
+
+.start,
+.done {
+  position: absolute;
+  top: -2rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.start {
+  left: 0;
+}
+
+.done {
+  right: 0;
+}
+
+.no-distractions {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .why-me h2 {
+    font-size: 2.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .why-me {
+    padding: 4rem 1rem;
+  }
+
+  .why-me h2 {
+    font-size: 2rem;
+  }
+
+  .devices-visual {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.squares-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.squares-canvas {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+  overflow: hidden;
+}
+
+/* Ensure content appears above squares */
+.header > *:not(.squares-container),
+.hero > *:not(.squares-container) {
+  position: relative;
+  z-index: 1;
+}
+/* Add these styles to your existing CSS */
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+  overflow: hidden;
+}.squares-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  
+  /* Sharper Circular Mask for the Blurred Center */
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 80%);
+  
+  /* Apply sharper blur effect to the center */
+  backdrop-filter: blur(15px); /* Sharper blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  
+  /* Circular container */
+  border-radius: 80%; 
+  
+  /* Inner shadow around the blurred center */
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.7); /* Darker shadow for sharper circle */
+}
+
+.blurred-squares-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+  overflow: hidden;
+  border-radius: 50%; /* Makes the container round */
+  
+  /* Sharper Blur Effect with Clearer Edges */
+  backdrop-filter: blur(15px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  
+  /* Focus on bottom with more shadow for depth */
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.7); /* Stronger bottom shadow */
+  
+  /* Circular shape with a clearer, sharper center and more emphasis on the edges */
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 100%);
+}
+.hero {
+  cursor: none;
+  position: relative;
+}
+.hero .particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Make sure particles are in the background */
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #060606);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Add this to your existing CSS file */
+/* Add these styles to your existing CSS file */
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+  overflow: hidden;
+}
+
+.hero .particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Make sure particles are behind the text but above the squares */
+}
+
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure content appears above particles */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Adjust z-index for squares containers */
+.squares-container {
+  z-index: -2;
+}
+
+.blurred-squares-container {
+  z-index: -3;
+}
+
+.glass-box {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  /* Glassmorphic Background */
+  background: rgba(4, 4, 4, 0.15);
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+
+  /* Border and Shadow Enhancements */
+  border: 1px solid rgba(255, 252, 252, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  /* Rounded Square Shape */
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  width: fit-content;
+  text-align: center;
+
+  /* Flexbox for alignment */
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Space between items */
+}
+
+.header-right {
+ 
+  border-radius: 50%;
+  object-fit: cover;
+  height: 20px; /* Adjust logo size */
+  width: auto;
+  
+}
+.header-right1{
+  height: 20px; /* Adjust logo size */
+  width: auto;
+}
+.glass-box p {
+  margin: 0;
+  font-size: 14px; /* Smaller text */
+  font-weight: 500;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+  position: absolute;
+  top: -80px; /* Adjust to move images up/down */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px; /* Space between images */
+  z-index: -1;
+}
+
+.custom-image {
+  width: 120px; /* Adjust size */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-left {
+  position: absolute;
+  left:     1200px; /* Adjust to move left */
+  top:390px;
+  z-index: -1;
+}
+
+.image-right {
+  position: absolute;
+  right: 940px; /* Adjust to move right */
+  top:444px;
+}
+
+
+
+
+
+
+
+
+
+.background {
+  align-items: center;
+  background-color: #408cc70d;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: var(--radison-framer-website-item-spacing-xs);
+  justify-content: center;
+  overflow: hidden;
+  padding: 8px 13px;
+  position: relative;
+  top: 130px;
+}
+
+.background .image {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 15px;
+  opacity: 0.9;
+  position: relative;
+  width: 15px;
+}
+
+.background .div {
+  background-image: url(../assets/image11.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 18px;
+  margin-bottom: -3.00px;
+  margin-right: -3.00px;
+  position: relative;
+  width: 18px;
+}
+
+.background .text-wrapper {
+  color: var(--radisonframerwebsitewhite);
+  font-family: var(--radison-framer-website-outfit-light-font-family);
+  font-size: var(--radison-framer-website-outfit-light-font-size);
+  font-style: var(--radison-framer-website-outfit-light-font-style);
+  font-weight: var(--radison-framer-website-outfit-light-font-weight);
+  letter-spacing: var(--radison-framer-website-outfit-light-letter-spacing);
+  line-height: var(--radison-framer-website-outfit-light-line-height);
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: 185px;
+}
+
+.background .border {
+  border: 1px solid;
+  border-color: #ffffff1a;
+  border-radius: 8px;
+  height: 34px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 230px;
+}
+:root {
+  --radison-framer-website-color-white-10: rgba(255, 255, 255, 0.1);
+  --radison-framer-website-item-spacing-xs: 8px;
+  --radison-framer-website-outfit-light-font-family: "Outfit", Helvetica;
+  --radison-framer-website-outfit-light-font-size: 14px;
+  --radison-framer-website-outfit-light-font-style: normal;
+  --radison-framer-website-outfit-light-font-weight: 300;
+  --radison-framer-website-outfit-light-letter-spacing: 0px;
+  --radison-framer-website-outfit-light-line-height: 16.799999237060547px;
+  --radisonframerwebsitewhite: rgba(255, 255, 255, 1);
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+/* Basic styling for container */
+.logoWall-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 50px; /* Adjusted height for image size */
+  margin-bottom: 200px;
+  background-color: rgb(0, 0, 0);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center; /* Centers everything horizontally */
+  align-items: center; /* Centers everything vertically */
+  text-align: center;
+  font-size: 2.765rem;
+  white-space: nowrap;
+  line-height: 1.5;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 20%, black 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 20%, black 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.marquee {
+  display: flex;
+  justify-content: flex-start;
+  animation: marqueeAnimation 95s linear infinite;
+  white-space: nowrap;
+  will-change: transform; /* Optimize animation */
+}
+
+.marquee__group {
+  display: flex;
+  gap: 50px; /* Spacing between images */
+  flex: 0 0 auto; /* Prevents items from shrinking */
+}
+
+.marquee__group img {
+  height: 40px; /* Set a fixed height for all images */
+  object-fit: contain;
+  margin-right: 40px; /* Adjust the spacing between images */
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100); /* Start from the beginning */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left, effectively making it infinite */
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}

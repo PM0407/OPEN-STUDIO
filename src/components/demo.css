@@ -1,0 +1,77 @@
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: #000000;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .marquee {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: marquee-scroll 20s linear infinite;
+  }
+  
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .review-card {
+    display: flex;
+    align-items: center;
+    background: rgb(57, 54, 54);
+    border-radius: 8px; /* Slightly smaller border-radius */
+    padding: 1px; /* Reduced padding */
+    padding-left: 6px;
+    padding-top: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    min-width: 20px; /* Reduced minimum width */
+    max-width: 290px; /* Reduced maximum width */
+    color: white;
+    position: relative;
+    font-size: 0.6rem; /* Reduced font size */
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px;
+    margin-top: -60px;
+  }
+  
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  .username {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: -12px;
+  }
+  
+  .body {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    margin-bottom:30px;
+
+
+
+    white-space: normal; /* Ensures text wraps */
+    word-wrap: break-word; /* Breaks long words if needed */
+    overflow-wrap: break-word; /* Ensures wrapping for long words */
+    text-align: left; /* Aligns text for better readability */
+    max-width: 100%; /* Ensures it stays inside the container */
+  }
+  

@@ -1,0 +1,26 @@
+.text-reveal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400%;
+  padding: 2rem;
+  background-color: black;
+  overflow: hidden;
+}
+
+.text-reveal-text {
+  font-size: 3rem;
+  line-height: 0.2em;; /* Ensures default spacing */
+  text-align: center; /* Align left to maintain line structure */
+  white-space: pre-line; /* Ensures line breaks are respected */
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .text-reveal-text {
+    font-size: 1.5rem;
+  }
+}
+
