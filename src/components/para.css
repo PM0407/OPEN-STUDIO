@@ -1,24 +1,27 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+.container1 {
+  height: 3900px;
+  position: fixed;
+  width: 1700px;
+  left: 30px;
+  gap: 20px;
+  bottom: 100px;
 }
 
-.container1 {
-  height: 3800px;
-  position: relative;
-  width: 1700px;
-  left:0px;
-  gap:2px;
-  bottom: 700px;
-  
-}
+
+
 
 
 .container1 .overlap-group {
   height: 8339px;
-  left: 0;
+  left: 10px;
   position: absolute;
   top: -8px;
   width: 708px;
+  padding-top: px;
 }
 
 .container1 .png {
@@ -43,7 +46,7 @@ border-color:10px black solid;
   border: 4px ;
   border-radius: 8px;
 
-  height: 833px;
+  height: 83px;
   left: 10px;
   position: absolute;
   top: 0;
@@ -72,6 +75,7 @@ border-color:10px black solid;
   background-size: cover;
   border: 4px ;
   border-radius: 8px;
+  overflow: hidden;
 
 }
 
@@ -85,21 +89,22 @@ border-color:10px black solid;
 
 .container1 .div {
   background-image: url("../assets/wesbite3.png");
-  background-position: 50% 50%;
+  background-position: 20% 50%;
   background-size: cover;
   border: 4px ;
 
   border-radius: 8px;
 
-  height: 950px;
+  height: 900px;
   right: -40px;
   position: absolute;
-  top: 0;
+  top: 100px;
   width: 420px;
+  overflow: hidden;
 }
 
 .container1 .png-2 {
-  background-image: url("../assets/website4.png");
+  background-image: url("../assets/website7.png");
 
   background-position: 50% 50%;
   background-size: cover;
@@ -111,7 +116,7 @@ border-color:10px black solid;
   left: -60px;
   position: absolute;
   top: 0;
-  width: 420px;
+  width: 410px;
 }
 
 .container1 .sm-png-2 {
@@ -128,8 +133,6 @@ border-color:10px black solid;
   width: 590px;
 }
 
-.container1 .png-3 {
-}
 
 .container1 .png-4 {
   background-image: url("../assets/website6.png");
@@ -140,7 +143,7 @@ border-color:10px black solid;
   height: 850px;
   left: 0;
   position: absolute;
-  top: 1580px;
+  top: 1500px;
   width: 344px;
 }
 
@@ -153,13 +156,13 @@ border-color:10px black solid;
 }
 
 .container1 .png-5 {
-  background-image: url("../assets/website7.png");
+  background-image: url("../assets/website4.png");
   background-position: 50% 50%;
   background-size: cover;
   border: 4px ;
   border-radius: 8px;
 
-  height: 656px;
+  height: 616px;
   left: -35px;
   position: absolute;
   top: 0;
@@ -225,19 +228,12 @@ border-color:10px black solid;
   top: 200px;
   width: 400px;
 }
-
-.container1 .png-8 {
-  background-image: url("../assets/website10.png");
-  background-position: 50% 50%;
-  background-size: cover;
-  border: 4px;
-
-  height: 953px;
-  left: 1456px;
-  position: absolute;
-  top: 989px;
-  width: 344px;
+/* Restrict upward movement */
+.animate-on-scroll {
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
 }
+
 .container1 {
   min-height: 1968px;
   position: relative;
@@ -252,6 +248,7 @@ border-color:10px black solid;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform;
   z-index: -1;
+  transform: translateY(-20px); /* Limits how much they move up */
 }
 
 /* Small images - crossing movement with higher z-index */
@@ -261,6 +258,7 @@ border-color:10px black solid;
   z-index: 1;
   position: relative;
 }
+
 
 /* Hover effects */
 .large-image:hover {
@@ -324,199 +322,75 @@ border-color:10px black solid;
   width: 400px;
 }
 
-/* Add perspective for 3D effect */
-.overlap-group,
-.overlap,
-.overlap-2 {
-  transform-style: preserve-3d;
-  perspective: 1000px;
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Responsive design */
-@media (max-width: 1700px) {
-  .container1 {
-    width: 95%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container1 {
-    height: auto;
-  }
-
-  .large-image,
-  .small-image {
-    width: 100%;
-    max-width: 344px;
-    position: relative;
-    left: 0;
-    margin: 1rem auto;
-  }
-}
-
-/* Keep all your existing CSS classes but ensure proper z-indexing */
-.container1 .overlap {
-  z-index: 1;
-}
-
-.container1 .overlap-2 {
-  z-index: 1;
-}
-
-/* Animation keyframes for small images */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* Apply floating animation to small images */
+.large-image,
 .small-image {
-  animation: float 1s ease-in-out infinite;
-}
-
-/* Stagger the animation for each small image */
-.sm-png {
-  animation-delay: 0s;
-}
-.sm-mockup-png {
-  animation-delay: 1s;
-}
-.sm-png-2 {
-  animation-delay: 2s;
-}
-.sm-png-3 {
-  animation-delay: 1.5s;
-}
-.sm-png-4 {
-  animation-delay: .1s;
-}
-
-/* Keep the rest of your existing CSS classes */
-
-.large-image {
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
-  z-index: 1;
   position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Creates a square aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-out;
 }
 
-/* Small images float above large images */
-.small-image {
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
-  z-index: 2; /* Ensures they stay above */
+.large-image > div,
+.small-image > div {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Large images move up/down on scroll */
-.large-image.animate {
-  transform: translateY(-20px);
+.animate-on-scroll {
+  opacity:1111 0;
+  transform: translateY(200px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-/* Small images remain above and float */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.small-image {
-  animation: float 6s ease-in-out infinite;
-}
-
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .container1 {
-    height: auto;
-  }
-  .large-image,
-  .small-image {
-    width: 100%;
-    max-width: 344px;
-    position: relative;
-    left: 0;
-    margin: 1rem auto;
-  }
-}
-
-
-
-
-
-
-
-/* Keep your existing positioning styles for each element */
-/* ... */
-
-@media (max-width: 768px) {
-  .container1 {
-    height: auto;
-  }
-
-  .parallax-element {
-    position: relative;
-    left: 0 !important;
-    top: 0 !important;
-    width: 100% !important;
-    max-width: 344px;
-    margin: 1rem auto;
-    transform: none !important;
-  }
-}
-
-
-
-
-.parallax-element {
-  position: absolute;
-  will-change: transform;
-  transition: transform 0.1s linear;
-}
-
-.large-image {
-  z-index: 1;
-}
-
-.small-image {
+/* Hover effects */
+.large-image:hover,
+.small-image:hover {
+  transform: scale(1.05);
   z-index: 2;
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
-.small-image {
-  animation: float 6s ease-in-out infinite;
-}
-
-/* Responsive design */
 @media (max-width: 768px) {
-  .container1 {
-    height: auto;
-  }
-
-  .parallax-element {
-    position: relative;
-    left: 0 !important;
-    top: 0 !important;
-    width: 100% !important;
-    max-width: 344px;
-    margin: 1rem auto;
-    transform: none !important;
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
 
+/* Ensure images don't exceed container boundaries */
+.container1 img {
+  max-width: 100%;
+  height: auto;
+}

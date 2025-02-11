@@ -9,10 +9,9 @@ import three from "./assets/3.png"
 import "./styles/TextReveal.css"
 import  {Exa}  from "./components/Icons.js"
 import Container from './components/Component.js';
-import {Background} from "./components/Box1";
-import {Backgrounds} from "./components/Box2.js";
-import {Backgroundss} from "./components/Box3";
-import  {Containerss}  from "./components/para.tsx"
+import {Box1} from "./components/Box1";
+
+import { Containerss } from "./components/para.tsx"
 import Heading from "./components/Price.js"
 import Footer from "./components/Footer.js"
 import PricingSection from "./components/PriceCard.js"
@@ -72,9 +71,7 @@ const App = () => {
         {/* Text Reveal Section */}
         <TextReveal/>
         <Container/>
-        <Background />
-        <Backgrounds/>
-      <Backgroundss/>
+   <Box1/>
 <Containerss/>
 <MarqueeDemo/>
  <Heading/>

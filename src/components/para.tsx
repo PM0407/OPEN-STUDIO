@@ -51,7 +51,7 @@ export const Containerss = () => {
       </div>
 
       <div className="png-3 animate-on-scroll" data-speed="0.17" />
-      <div className="png-4 animate-on-scroll" data-speed="0.15" />
+      <div className="png-4 animate-on-scroll" data-speed="0.19" />
 
       <div className="overlap-2 animate-on-scroll" data-speed="0.12">
         <div className="png-5 animate-on-scroll" data-speed="0.18" />

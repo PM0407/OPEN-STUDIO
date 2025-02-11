@@ -1,20 +1,45 @@
-.background1 {
+
+.container {
+  height: 417px;
+  width: 1228px;
+  bottom:100px;
+}
+
+.container .group {
+  height: 417px;
+  position: relative;
+  bottom:180px;
+  left:-150px;
+}
+
+.container .background-shadow {
+  background: linear-gradient(180deg, rgb(38, 38, 38) 0%, rgb(20, 20, 20) 100%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 33px #0000000d;
+  height: 417px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 388px;
+}
+
+.container .background {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(38, 38, 38) 0%,
     rgb(20, 20, 20) 100%
   );
-  background-color: rgba(255, 255, 255, 1.0);
   border-radius: 25px;
   height: 415px;
-left:150px;
-top:150px;
+  left: 1px;
   overflow: hidden;
   position: relative;
+  top: 1px;
   width: 386px;
 }
 
-.background1 .overlap {
+.container .overlap-group {
   height: 296px;
   left: 32px;
   position: absolute;
@@ -22,8 +47,8 @@ top:150px;
   width: 322px;
 }
 
-.background1 .div {
-  background-image: url("../assets/bg.png");
+.container .div {
+  background-image: url(../assets/bg.png);
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 0px 0px 23px 0px;
@@ -35,7 +60,7 @@ top:150px;
   width: 239px;
 }
 
-.background1 .heading-plan {
+.container .heading-plan {
   color: #ffffff;
   font-family: "Inter-Medium", Helvetica;
   font-size: 28.6px;
@@ -51,8 +76,8 @@ top:150px;
   width: 202px;
 }
 
-.background1 .div-2 {
-  background-image: url("../assets/bg.png");
+.container .div-2 {
+  background-image: url(../assets/bg.png);
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 18px;
@@ -63,7 +88,7 @@ top:150px;
   width: 322px;
 }
 
-.background1 .border {
+.container .border {
   border: 1px solid;
   border-color: #262626;
   border-radius: 18px;
@@ -74,7 +99,7 @@ top:150px;
   width: 322px;
 }
 
-.background1 .container {
+.container .overlap-wrapper {
   height: 190px;
   left: 16px;
   overflow: hidden;
@@ -83,7 +108,7 @@ top:150px;
   width: 290px;
 }
 
-.background1 .overlap-group {
+.container .overlap {
   height: 139px;
   left: -35px;
   position: relative;
@@ -91,7 +116,7 @@ top:150px;
   width: 316px;
 }
 
-.background1 .overlap-group-2 {
+.container .overlap-group-2 {
   height: 120px;
   left: 29px;
   position: absolute;
@@ -99,7 +124,7 @@ top:150px;
   width: 288px;
 }
 
-.background1 .horizontal-divider {
+.container .horizontal-divider {
   background: linear-gradient(
     180deg,
     rgba(17, 17, 17, 0) 0%,
@@ -114,7 +139,7 @@ top:150px;
   width: 304px;
 }
 
-.background1 .horizontal-divider-2 {
+.container .horizontal-divider-2 {
   background: linear-gradient(
     180deg,
     rgba(17, 17, 17, 0) 0%,
@@ -128,7 +153,7 @@ top:150px;
   width: 267px;
 }
 
-.background1 .horizontal-divider-3 {
+.container .horizontal-divider-3 {
   background: linear-gradient(
     180deg,
     rgba(17, 17, 17, 0) 0%,
@@ -143,7 +168,7 @@ top:150px;
   width: 304px;
 }
 
-.background1 .background-wrapper {
+.container .background-wrapper {
   background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(20, 20, 20) 100%);
   border-radius: 40px;
   height: 32px;
@@ -153,7 +178,7 @@ top:150px;
   width: 32px;
 }
 
-.background1 .div-3 {
+.container .background-2 {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(38, 38, 38) 47.49%,
@@ -165,7 +190,7 @@ top:150px;
   position: relative;
 }
 
-.background1 .div-wrapper {
+.container .div-wrapper {
   background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(20, 20, 20) 100%);
   border-radius: 40px;
   height: 62px;
@@ -174,8 +199,7 @@ top:150px;
   top: 29px;
   width: 62px;
 }
-
-.background1 .div-wrapper-2 {
+.container .background-3 {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(38, 38, 38) 47.49%,
@@ -190,8 +214,8 @@ top:150px;
   width: 60px;
 }
 
-.background1 .div-4 {
-  background-image: url("../assets/bg.png");
+.container .div-3 {
+  background-image: url(../assets/bg.png);
   background-position: 50% 50%;
   background-size: cover;
   height: 33px;
@@ -201,7 +225,7 @@ top:150px;
   width: 33px;
 }
 
-.background1 .img {
+.container .img {
   height: 36px;
   left: 252px;
   position: absolute;
@@ -209,7 +233,7 @@ top:150px;
   width: 36px;
 }
 
-.background1 .img-2 {
+.container .background-4 {
   height: 39px;
   left: 217px;
   position: absolute;
@@ -217,7 +241,7 @@ top:150px;
   width: 50px;
 }
 
-.background1 .background-wrapper-2 {
+.container .background-5 {
   background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(20, 20, 20) 100%);
   border-radius: 40px;
   height: 32px;
@@ -227,7 +251,7 @@ top:150px;
   width: 32px;
 }
 
-.background1 .div-5 {
+.container .background-6 {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgb(38, 38, 38) 47.49%,
@@ -239,7 +263,7 @@ top:150px;
   top: 1px;
 }
 
-.background1 .img-3 {
+.container .background-7 {
   height: 36px;
   left: 280px;
   position: absolute;
@@ -247,7 +271,7 @@ top:150px;
   width: 36px;
 }
 
-.background1 .img-4 {
+.container .background-8 {
   height: 36px;
   left: 280px;
   position: absolute;
@@ -255,7 +279,7 @@ top:150px;
   width: 36px;
 }
 
-.background1 .we-enhance {
+.container .we-enhance {
   color: #afafaf;
   font-family: "Manrope-Regular", Helvetica;
   font-size: 18px;
@@ -268,4 +292,381 @@ top:150px;
   text-align: center;
   top: 316px;
   width: 306px;
+}
+
+.container .background-shadow-2 {
+  background: linear-gradient(180deg, rgb(38, 38, 38) 0%, rgb(20, 20, 20) 100%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 33px #0000000d;
+  height: 417px;
+  left: 420px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 388px;
+}
+
+.container .div-4 {
+  background-image: url(../assets/bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 0px 0px 23px 0px;
+  height: 239px;
+  left: 42px;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  width: 239px;
+}
+
+.container .heading-custom {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 28px;
+  font-weight: 500;
+  height: 38px;
+  left: 57px;
+  letter-spacing: -1.00px;
+  line-height: 37.5px;
+  position: absolute;
+  text-align: center;
+  top: 36px;
+  white-space: nowrap;
+  width: 207px;
+}
+
+.container .overlap-group-wrapper {
+  background-color: #050505;
+  border-radius: 18px;
+  height: 190px;
+  left: 0;
+  position: absolute;
+  top: 106px;
+  width: 322px;
+}
+
+.container .overlap-2 {
+  border-radius: 18px;
+  height: 190px;
+  position: relative;
+}
+
+.container .element-wrapper {
+  background: linear-gradient(180deg, rgb(20, 20, 20) 0%, rgb(5, 5, 5) 100%);
+  border-radius: 10px 0px 0px 10px;
+  height: 188px;
+  left: 17px;
+  opacity: 0.68;
+  position: absolute;
+  top: 1px;
+  width: 46px;
+}
+
+.container .element {
+  color: #626262;
+  font-family: "Roboto Mono-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  height: 131px;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 27px;
+  width: 7px;
+}
+
+.container .paragraph-background {
+  background: linear-gradient(180deg, rgb(5, 5, 5) 0%, rgb(0, 0, 0) 100%);
+  border-radius: 0px 10px 10px 0px;
+  height: 188px;
+  left: 63px;
+  opacity: 0.68;
+  position: absolute;
+  top: 1px;
+  width: 242px;
+}
+
+.container .overlap-group-3 {
+  height: 131px;
+  left: 18px;
+  position: relative;
+  top: 27px;
+  width: 173px;
+}
+
+.container .class-chatbot {
+  color: transparent;
+  font-family: "Roboto Mono-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  height: 131px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: absolute;
+  top: 0;
+  width: 173px;
+}
+
+.container .text-wrapper {
+  color: #ffffff;
+}
+
+.container .span {
+  color: #afafaf;
+}
+
+.container .text-wrapper-2 {
+  color: #fafafa;
+}
+
+.container .text-wrapper-3 {
+  color: #afafaf;
+  font-family: "Roboto Mono-Regular", Helvetica;
+  font-size: 10.5px;
+  font-weight: 400;
+  height: 14px;
+  left: 79px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 116px;
+  white-space: nowrap;
+  width: 7px;
+}
+
+.container .text-wrapper-4 {
+  color: #626262;
+  font-family: "Roboto Mono-Regular", Helvetica;
+  font-size: 10.5px;
+  font-weight: 400;
+  height: 14px;
+  left: 87px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  position: absolute;
+  top: 116px;
+  white-space: nowrap;
+  width: 7px;
+}
+
+.container .border-2 {
+  border: 1px solid;
+  border-color: #262626;
+  border-radius: 18px;
+  height: 190px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 322px;
+}
+
+.container .we-created-a {
+  color: #afafaf;
+  font-family: "Manrope-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  height: 53px;
+  left: 47px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  text-align: center;
+  top: 316px;
+  width: 292px;
+}
+
+.container .background-shadow-3 {
+  background: linear-gradient(180deg, rgb(38, 38, 38) 0%, rgb(20, 20, 20) 100%);
+  border-radius: 25px;
+  box-shadow: 0px 4px 33px #0000000d;
+  height: 417px;
+  left: 840px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 388px;
+}
+
+.container .div-5 {
+  background-image: url(../assets/bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 0px 0px 23px 0px;
+  height: 239px;
+  left: 42px;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  width: 239px;
+}
+.container .heading-smart {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 28px;
+  font-weight: 500;
+  height: 38px;
+  left: 47px;
+  letter-spacing: -1.00px;
+  line-height: 37.5px;
+  position: absolute;
+  text-align: center;
+  top: 36px;
+  white-space: nowrap;
+  width: 229px;
+}
+
+.container .div-6 {
+  background-image: url(../assets/bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 18px;
+  height: 190px;
+  left: 0;
+  position: absolute;
+  top: 106px;
+  width: 322px;
+}
+
+.container .vertical-divider {
+  background-color: #262626;
+  height: 94px;
+  left: 161px;
+  position: absolute;
+  top: 154px;
+  width: 1px;
+}
+
+.container .background-9 {
+  background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(20, 20, 20) 100%);
+  border-radius: 8px;
+  height: 38px;
+  left: 92px;
+  position: absolute;
+  top: 136px;
+  width: 138px;
+}
+
+.container .background-10 {
+  background-color: #141414;
+  border-radius: 7px;
+  height: 36px;
+  left: 1px;
+  position: relative;
+  top: 1px;
+  width: 136px;
+}
+
+.container .div-7 {
+  background-image: url(../assets/bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 14px;
+  left: 12px;
+  position: absolute;
+  top: 11px;
+  width: 14px;
+}
+
+.container .text-wrapper-5 {
+  color: #919191;
+  font-family: "Manrope-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 14px;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+  width: 46px;
+}
+
+.container .background-11 {
+  background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(20, 20, 20) 100%);
+  border-radius: 8px;
+  height: 38px;
+  left: 92px;
+  position: absolute;
+  top: 182px;
+  width: 138px;
+}
+
+.container .div-8 {
+  background-image: url(../assets/bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 14px;
+  left: 12px;
+  position: absolute;
+  top: 11px;
+  width: 14px;
+}
+
+.container .text-wrapper-6 {
+  color: #919191;
+  font-family: "Manrope-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 14px;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+  width: 55px;
+}
+
+.container .background-12 {
+  background: linear-gradient(180deg, rgb(61, 61, 61) 0%, rgb(20, 20, 20) 100%);
+  border-radius: 8px;
+  height: 38px;
+  left: 92px;
+  position: absolute;
+  top: 230px;
+  width: 138px;
+}
+
+.container .div-9 {
+  background-image: url(../assets/bg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 14px;
+  left: 12px;
+  position: absolute;
+  top: 11px;
+  width: 14px;
+}
+
+.container .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Manrope-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 14px;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+  width: 70px;
+}
+
+.container .we-analyze {
+  color: #afafaf;
+  font-family: "Manrope-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  height: 53px;
+  left: 46px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  text-align: center;
+  top: 316px;
+  width: 295px;
 }
